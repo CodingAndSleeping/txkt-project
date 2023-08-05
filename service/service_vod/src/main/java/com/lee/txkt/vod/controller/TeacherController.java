@@ -25,6 +25,7 @@ import java.util.List;
  * @since 2023-07-29
  */
 @Api(tags = "讲师管理接口")
+@CrossOrigin //跨域
 @RestController
 @RequestMapping("/admin/vod/teacher")
 public class TeacherController {
@@ -50,7 +51,7 @@ public class TeacherController {
 
 
     @ApiOperation("条件分页查询")
-    @PostMapping("findQuery/{page}/{pageSize}")
+    @PostMapping("findQueryPage/{page}/{pageSize}")
     public Result<?> findPage(@PathVariable long page, @PathVariable long pageSize, @RequestBody(required = false) TeacherQueryVo teacherQueryVo) {
 
         System.out.println(teacherQueryVo);
