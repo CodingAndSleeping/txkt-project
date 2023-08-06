@@ -17,10 +17,31 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+
 
 
 
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+  # 腾讯cos云对象存储配置
+tencent:
+  cos:
+    file:
+      region: ap-guangzhou
+      secret-id: AKIDbENQKCsNhqrmcN1e7f6VtBPRjSEKPkwq
+      secret-key: 160iDVYcgbIn3GTe0EFF6pdQ5cwApQsI
+      bucket-name: tencentcos-1312215236
+
+
+
+
+
+
 
