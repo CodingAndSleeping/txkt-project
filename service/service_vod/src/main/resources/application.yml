@@ -35,8 +35,8 @@ tencent:
   cos:
     file:
       region: ap-guangzhou
-      secret-id: AKIDbENQKCsNhqrmcN1e7f6VtBPRjSEKPkwq
-      secret-key: 160iDVYcgbIn3GTe0EFF6pdQ5cwApQsI
+      secret-id: id
+      secret-key: key
       bucket-name: tencentcos-1312215236
 
 
