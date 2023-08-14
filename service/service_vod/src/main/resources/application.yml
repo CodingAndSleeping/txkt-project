@@ -25,12 +25,12 @@ spring:
 
 
 
-
+# mybatisplus 日志输出格式
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-  # 腾讯cos云对象存储配置
+# 腾讯cos云对象存储配置
 tencent:
   cos:
     file:
